@@ -1,8 +1,10 @@
 import markdownIt from "markdown-it";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("main.css");
 
   const md = markdownIt({
     html: true,
@@ -29,4 +31,5 @@ export default function (eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setOutputDirectory("docs");
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 }

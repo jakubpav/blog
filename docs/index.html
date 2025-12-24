@@ -14,28 +14,95 @@
     <meta name="author" content="Jakub Pavelka">
     <meta name="keywords" content="Jakub, Pavelka, personal, website, portfolio">
     <meta name="theme-color" content="#ffffff">
-    <title>Jakub Pavelka - Blog Main site</title>
+    <title>Blog Main site -- jakubpav's Blog</title>
 </head>
 
 <body>
     <header>
-        <h2><a href="/">jakubpav</a></h2>
-        <nav>
-            <ul>
-                <li><a href="/blog/">Blog</a></li>
-                <li><a href="/tutorial/">C++ Tutorial</a></li>
-                <li><a href="https://jakubpav.github.io" target="_blank">About Me</a></li>
-            </ul>
-        </nav>
+        <h2><a href="/">jakubpav's Blog</a></h2>
     </header>
+    <aside> <ul><li><a href="/tutorial/">C++ Tutorial</a><ul><li><a href="/tutorial/fundamentals/">Fundamentals</a><ul><li><a href="/tutorial/fundamentals/Intro/">Introduction</a></li>
+<li><a href="/tutorial/fundamentals/types/">Types</a></li></ul></li></ul></li>
+<li><a href="/blog/">Blog</a><ul><li><a href="/blog/ranges/">Ranges</a></li></ul></li></ul> </aside>
     <main> <h1>Blog Main site</h1>
 <p>Hello and welcome to my blog this is where I discuss things around C++ and it's development as well as home for my modern <a href="./tutorial">C++ tutorial</a>.</p>
 <pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;print></span></span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> std<span class="token double-colon punctuation">::</span><span class="token function">prinln</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+ <span class="token property">--bg-primary</span><span class="token punctuation">:</span> #1a1a1a<span class="token punctuation">;</span>
+ <span class="token property">--bg-secondary</span><span class="token punctuation">:</span> #2d2d2d<span class="token punctuation">;</span>
+ <span class="token property">--text-primary</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+ <span class="token property">--text-secondary</span><span class="token punctuation">:</span> #b0b0b0<span class="token punctuation">;</span>
+ <span class="token property">--border-color</span><span class="token punctuation">:</span> #404040<span class="token punctuation">;</span>
+ <span class="token property">--accent-color</span><span class="token punctuation">:</span> #66b3ff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+ <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Segoe UI"</span><span class="token punctuation">,</span> Roboto<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+ <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--bg-primary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--text-primary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token property">line-height</span><span class="token punctuation">:</span> 1.6<span class="token punctuation">;</span>
+ <span class="token property">transition</span><span class="token punctuation">:</span> background-color 0.3s<span class="token punctuation">,</span> color 0.3s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">main</span> <span class="token punctuation">{</span>
+ <span class="token property">max-width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span>
+ <span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+ <span class="token property">padding</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">aside</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--bg-secondary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--border-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+  <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">footer</span> <span class="token punctuation">{</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+  <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--border-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--text-secondary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1,
+h2,
+h3</span> <span class="token punctuation">{</span>
+ <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--text-primary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token property">margin-top</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span>
+ <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 0.5rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">article</span> <span class="token punctuation">{</span>
+ <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--bg-secondary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token property">padding</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span>
+ <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+ <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+ <span class="token property">border</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--border-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">a</span> <span class="token punctuation">{</span>
+ <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--accent-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">a:hover</span> <span class="token punctuation">{</span>
+ <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
  </main>
     <footer>
-        <p>&copy; 2025 Jakub Pavelka built with <a href="https://www.11ty.dev" target="_blank">11ty</a></p>
+        <p>&copy; 2025 <a href="https://jakubpav.github.io" target="_blank">Jakub Pavelka</a> built with
+            <a href="https://www.11ty.dev" target="_blank">11ty</a> |
+            <a href="https://github.com/jakubpav/blog" target="_blank">Code</a> |
+            <a href="https://github.com/jakubpav/blog/issues" target="_blank">Issues</a>
+        </p>
     </footer>
 </body>
 
